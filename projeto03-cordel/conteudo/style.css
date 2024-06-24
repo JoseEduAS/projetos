@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Sriracha',cursive;
+    --fonte3: 'Passion One',sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    background-color: darkgrey;
+    font-family: var(--fonte1);     
+
+    min-height: 100vh;
+}
+
+header{
+background-color: black;
+color: white;
+
+text-align: center;
+
+}
+
+#titulo{
+    font-family: var(--fonte3);
+    font-variant: small-caps;
+    font-size: 7vw;
+
+    padding-top: 50px;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2.2em;
+    padding-left: 33px;
+}
+
+section > p{
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    padding-bottom: 2em;
+    padding-right: 63px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+    padding-left: 63px;
+}
+
+section.imagem{
+
+    background-color: rgb(54, 54, 54);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.381);
+
+    background-size: cover;
+
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.554);
+    text-shadow: 2px 2px 5px black;
+
+    min-width: 200px;
+    max-width: 280px;
+    padding: 30px;
+}
+
+section#imagem01{
+    background-image: url(../pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section#imagem02{
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+#p-footer{
+    text-align: center;
+}
